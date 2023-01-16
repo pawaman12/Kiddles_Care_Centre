@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+   --main-color :#734446;
+   --black:#222;
+   --white:#fff;
+   --light-black:#777;
+   --light-white:#fff9;
+   --dark-bg:rgba(0,0,0,.7);
+   --light-bg:#eee;
+   --light-maroon:#7344464a;
+   --border:.2rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+}
+
+body{background-color:var(--light-maroon) ;}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
+ 
+ html::-webkit-scrollbar{
+    width: 1rem;
+ }
+ 
+ html::-webkit-scrollbar-track{
+    background-color: var(--white);
+ }
+ 
+ html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+ }
+ 
+ section{
+    padding:5rem 10%;
+ }
+ 
+ @keyframes fadeIn {
+    0%{
+       transform: scale(0);
+       opacity: 0;
+    }
+ }
+ 
+
+.heading{
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 10rem;
+    padding-bottom:15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .heading h1{
+    font-size: 10rem;
+    text-transform: uppercase;
+    color:var(--white);
+    text-shadow: var(--text-shadow);
+ }
+
+ 
+ 
+ .btn{
+    display: inline-block;
+    background: var(--main-color);
+    margin-top: 1rem;
+    color:var(--white);
+    font-size: 3rem;
+    padding:1rem 3rem;
+    cursor: pointer;
+ }
+ 
+ .btn:hover{
+    background: var(--main-color);
+ }
+
+.container{
+
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:50px;
+    padding-bottom: 60px;
+    
+ }
+ 
+ .container .content{
+    text-align: center;
+   
+ }
+ 
+ .container .content h3{
+    font-size: 30px;
+    color:#333;
+ }
+ 
+ .container .content h3 span{
+    background:var(--main-color);
+    color:#fff;
+    border-radius: 5px;
+    padding:0 15px;
+ }
+ 
+ .container .content h1{
+    font-size: 50px;
+    color:#333;
+ }
+ 
+ .container .content h1 span{
+    color:var(--main-color);
+ }
+ 
+ .container .content p{
+    font-size: 25px;
+    margin-bottom: 20px;
+ }
+ 
+ .container .content .btn{
+    display: inline-block;
+    padding:10px 30px;
+    font-size: 20px;
+    background: #333;
+    color:rgb(255, 255, 255);
+    margin:0 5px;
+    text-transform: capitalize;
+ }
+ 
+ .container .content .btn:hover{
+    background:var(--main-color);
+ }
+
+ .about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ .about .content{
+    flex:1 1 41rem;
+    text-align: center;
+ }
+ .about .content h3{
+    font-size: 2rem;
+    color:var(--main-color);
+ }
+ .about .content h4{
+    font-size: 10rem;
+    color:var(--main-color);
+    padding: 0px;
+ }
+ about .content p{
+    font-size: 1.5rem;
+    color:var(--light-black);
+    line-height: 2;
+    padding:1rem 0;
+ }
+
+/* stories */
+*{
+   margin: 0px;
+   padding: 0px;
+}
+.container1 h2{
+   padding: 60px 0px;
+   color: #734446;
+   font-size: 55px;
+   text-align: center;
+  
+
+}
+.row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   
+
+}
+.col{
+   flex-basis: 50%;
+   min-width: 350px;
+
+}
+.feature-img{
+   width: 95%;
+   margin: auto;
+   position: relative;
+   border-radius: 6px;
+   overflow: hidden;
+   height: fit-content;
+}
+.small-img-row{
+   display: flex;
+   background:var(--main-color);
+   margin: 20px 0px;
+   align-items: center;
+   border-radius: 6px;
+   overflow: hidden;
+   width: 85%;
+   height: 140px;
+  
+}
+
+.small-img-row p{
+   margin-left: 20px;
+   font-size: 20px;
+   line-height: 22px;
+   color: #fff;
+}
+.small-img{
+   position: relative;
+}
+.small-img img{
+   width: 295px;
+}
+
+.play-btn{
+   width: 60px;
+   position: absolute;
+   left: 50%;
+   top:50%;
+   transform: translate(-50%,-50%);
+   cursor: pointer;
+}
+.small-img .play-btn{
+   width: 35px;
+
+}
+
+.video-player{
+   width: 75%;
+   position: absolute;
+   left: 50%;
+   top:50%;
+   transform: translate(-50%,-50%);
+   display: none;
+   align-items: center;
+
+}
+video:focus{
+   outline: none;
+}
+
+.close-btn{
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   width: 40px;
+   cursor: pointer;
+}
